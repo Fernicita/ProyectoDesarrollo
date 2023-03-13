@@ -16,7 +16,8 @@ function buscar() {
 
 
 function eliminar() {
-  echo
+  read -p "Ingrese el concepto a eliminar:" eliminar
+  sed -i"/\[$eliminar\}/d" "$1"
 }
 
 function leer() {
