@@ -17,8 +17,8 @@ function buscar() {
 
 function eliminar() {
   read -p "Ingrese el concepto a eliminar:" eliminar
-  if !grep -q "\[$eliminar\]" "$1"; then
-	echo "El concetpo '$eleiminar' no existe en el archivo"
+  if ! grep -q "\[$eliminar\]" "$1"; then
+	echo "El concetpo '$eliminar' no existe en el archivo"
 	return 1
   fi
   if ! sed -i ''"/\[$eliminar\]/d" "$1";then 
