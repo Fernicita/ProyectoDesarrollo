@@ -21,7 +21,7 @@ function eliminar() {
 	echo "El concetpo '$eleiminar' no existe en el archivo"
 	return 1
   fi
-  if ! sed -i ""/\[$eliminar\]/d" "$1";then 
+  if ! sed -i ''"/\[$eliminar\]/d" "$1";then 
   	echo "Error al eliminar el concepto '$eliminar'"
 	return 1
   fi 
